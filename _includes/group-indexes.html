@@ -4,7 +4,7 @@
   {% if p == page %}
   <li class="current">{{ p.title }}</li>
   {% else %}
-  <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
   {% endif %}
 {% endif %}{% endfor %}
 </ul>

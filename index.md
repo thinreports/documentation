@@ -5,7 +5,7 @@ title: Welcome
 
 ### Getting Started
 
-  * [クイックスタートガイド](/getting-started/quickstart.html)
+  * [クイックスタートガイド]({{ site.baseurl }}/getting-started/quickstart.html)
 
 ### Examples
 

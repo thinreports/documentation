@@ -6,7 +6,7 @@
   {% for dir in dirs %}{% unless forloop.last %}
     {% assign finder_path = path | append: '/index.md' %}
     {% for p in site.pages %}{% if p.path contains finder_path %}
-      <a href="{{ p.url }}">{{ p.title }}</a>
+      <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
     {% endif %}{% endfor %}
     {% assign path = path | append: '/' | append: dir %}
   {% endunless %}{% endfor %}

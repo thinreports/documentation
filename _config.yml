@@ -1,3 +1,4 @@
+baseurl: /thinreports-docs
 markdown: redcarpet
 exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
 highlighter: rouge
