@@ -1,0 +1,5 @@
+markdown: redcarpet
+exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
+highlighter: rouge
+gems:
+  - jekyll-sitemap

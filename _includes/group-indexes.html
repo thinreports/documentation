@@ -1,0 +1,11 @@
+{% if include.group %}
+<ul>
+{% for p in site.pages %}{% if p.group == include.group %}
+  {% if p == page %}
+  <li class="current">{{ p.title }}</li>
+  {% else %}
+  <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+  {% endif %}
+{% endif %}{% endfor %}
+</ul>
+{% endif %}

@@ -1,0 +1,14 @@
+{% assign dirs = page.path | split: '/' %}
+
+{% if dirs.size > 1 and dirs.last != 'index.md' %}
+  {% assign path = dirs | first %}
+  <nav>
+  {% for dir in dirs %}{% unless forloop.last %}
+    {% assign finder_path = path | append: '/index.md' %}
+    {% for p in site.pages %}{% if p.path contains finder_path %}
+      <a href="{{ p.url }}">{{ p.title }}</a>
+    {% endif %}{% endfor %}
+    {% assign path = path | append: '/' | append: dir %}
+  {% endunless %}{% endfor %}
+  </nav>
+{% endif %}
