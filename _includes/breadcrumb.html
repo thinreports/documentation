@@ -1,7 +1,7 @@
 {% assign dirs = page.path | split: '/' %}
 
-{% if dirs.size > 1 and dirs.last != 'index.md' %}
-  {% assign path = dirs | first %}
+{% if dirs.size > 2 and dirs.last != 'index.md' %}
+  {% assign path = dirs[1] %}
   <nav>
   {% for dir in dirs %}{% unless forloop.last %}
     {% assign finder_path = path | append: '/index.md' %}
