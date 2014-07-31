@@ -91,4 +91,56 @@ $ rm -fr ~/.thinreports
 
 ## ThinReports Generator
 
-TODO
+### 必要なライブラリ
+
+ThinReports Generator をインストールするにはいくつかのライブラリが必要です。
+インストールを始める前にインストール先の環境に以下のライブラリがあることを確認して下さい。
+
+  * Ruby or JRuby
+  * RubyGems
+
+各ライブラリのサポートバージョンについては [こちら](http://www.thinreports.org/features/generator/) で確認できます。
+
+### RubyGems でインストールする
+
+RubyGems でインストールする場合は、ターミナル上で以下のコマンドを実行すれば完了です。
+
+```
+$ gem install thinreports
+```
+
+#### バージョンを指定してインストールする
+
+インストールコマンドに `-v` オプションを指定することでインストールするバージョンを指定できます。
+
+```
+$ gem install thinreports -v 0.7.7
+```
+
+#### アップデートする
+
+```
+$ gem update thinreports
+```
+
+アップデートの際もインストール同様、 `-v` オプションでアップデートするバージョンを指定できます。
+
+### Bundler でインストールする
+
+パッケージ管理ツール [Bundler]() を使ってインストールする場合は、まず Bundler をインストールします。
+
+```
+$ gem install bundler
+```
+
+そして、インストールパッケージを記述する `Gemfile` に以下のように追記します。
+
+``` ruby
+gem 'thinreports'
+```
+
+最後に、以下のコマンドでインストールを実行すれば完了です。
+
+```
+$ bundle install
+```
