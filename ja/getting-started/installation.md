@@ -127,13 +127,13 @@ $ gem update thinreports
 
 ### Bundler でインストールする
 
-パッケージ管理ツール [Bundler]() を使ってインストールする場合は、まず Bundler をインストールします。
+gem 管理ツール [Bundler](http://bundler.io/) を使ってインストールする場合は、まず Bundler をインストールします。
 
 ```
 $ gem install bundler
 ```
 
-そして、インストールパッケージを記述する `Gemfile` に以下のように追記します。
+そして、インストール gem を記述する `Gemfile` に以下のように追記します。
 
 ``` ruby
 gem 'thinreports'
