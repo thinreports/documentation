@@ -1,6 +1,6 @@
 baseurl: /documentation
-markdown: redcarpet
 exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
-highlighter: rouge
+markdown: kramdown
+highlighter: pygments
 gems:
   - jekyll-sitemap
