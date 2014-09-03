@@ -7,6 +7,7 @@ locale: ja
 
 ThinReports を利用するには [ThinReports Editor](http://www.thinreports.org/features/editor/) と
 [ThinReports Generator](http://www.thinreports.org/features/generator/) が必要です。
+また、帳票を閲覧するために Adobe Reader 等のクライアントソフトウェアが必要になる場合もあります。
 
 ## ThinReports Editor
 
