@@ -54,7 +54,7 @@ ThinReports を起動し、ツールバーの「新規作成」ボタンから�
 ~~~~
 ![ブロックツール](images/thinreports-editor-tblock.png "ブロックツール") *ブロックツール（テキストブロックツール）*
 
-テキストツールが *静的* であることに対して *動的* にテキストを描画するためのツールです。"Generator":http://www.thinreports.org/features/generator から、ブロックに設定された *ID* に対して任意の値がセットできるようになります。
+テキストツールが *静的* であることに対して *動的* にテキストを描画するためのツールです。[Generator](http://www.thinreports.org/features/generator) から、ブロックに設定された *ID* に対して任意の値がセットできるようになります。
 ~~~~
 
 ブロックツールを選択し「Hello」横付近から範囲ドラッグして下さい。
@@ -268,11 +268,11 @@ end
 
 では、実際にPDFファイルを生成してみます。コンソールから以下のコマンドを実行して下さい。
 
-{% highlight ruby %}
+~~~~
 $ cd ~/Documents
 $ ruby hello_world.rb
 Done!
-{% endhighlight %}
+~~~~
 
 コンソール上に `Done!` と表示されれば成功です。
 スクリプトと同じ場所に `hello_world.pdf` というPDFファイルが作成されているはずです。
@@ -283,10 +283,10 @@ Done!
 
 上記で使用したファイルは、以下よりダウンロードできます。ぜひ、参考にして下さい。
 
-* [hello_world.tlf (レイアウトファイル)](files/hello_world.tlf)
-* [hello_world.rb (Rubyスクリプトファイル)](files/hello_world.rb)
-* [hello_world.pdf (出力結果PDFファイル)](files/hello_world.pdf)
-* [hello_world.zip (上記3ファイルのアーカイブ)](files/hello_world.zip)
+* [レイアウトファイル (hello_world.tlf)](files/hello_world.tlf)
+* [Rubyスクリプトファイル (hello_world.rb)](files/hello_world.rb)
+* [出力結果PDFファイル (hello_world.pdf)](files/hello_world.pdf)
+* [上記3ファイルのアーカイブ (hello_world.zip)](files/hello_world.zip)
 
 ## 簡易仕様書の自動生成
 
