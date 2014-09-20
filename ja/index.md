@@ -9,4 +9,6 @@ title: Welcome
 
 ### サンプル集
 
-{% include group-indexes.html group = 'examples' %}
+  * [サンプルコード集](https://github.com/thinreports/thinreports-examples/blob/master/README.md)
+  * [Rails4 サンプルアプリケーション](https://github.com/thinreports/thinreports-rails4-example)
+  * [Rails3 サンプルアプリケーション](https://github.com/thinreports/thinreports-rails3-example)
