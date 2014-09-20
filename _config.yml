@@ -1,5 +1,5 @@
 baseurl: /documentation
-exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
 markdown: kramdown
 highlighter: pygments
 gems:
