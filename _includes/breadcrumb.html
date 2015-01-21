@@ -1,6 +1,6 @@
 {% assign dirs = page.path | split: '/' %}
 
-{% if dirs.size > 0 %}
+{% if dirs.size > 1 %}
 <ol class="breadcrumb">
   <li><a href="/">HOME</a></li>
 {% unless dirs.last == 'index.md' %}

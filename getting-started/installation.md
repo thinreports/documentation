@@ -2,7 +2,7 @@
 layout: default
 title: インストールガイド
 group: getting-started
-locale: ja
+toc: true
 ---
 
 Thinreports を利用するには [Thinreports Editor](http://www.thinreports.org/features/editor/) と
