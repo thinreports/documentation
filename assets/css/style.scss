@@ -11,7 +11,6 @@
 }
 
 body {
-  padding-top: 90px;
   font-size: 14px;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
   font-weight: 300;
@@ -19,8 +18,15 @@ body {
   line-height: 1.5em;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 700 !important;
+}
+
 .container-fluid {
   max-width: 980px;
+}
+
+#toc ul {
 }
 
 .main {

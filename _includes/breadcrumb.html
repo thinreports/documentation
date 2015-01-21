@@ -1,10 +1,11 @@
 {% assign dirs = page.path | split: '/' %}
 
-{% if dirs.size > 1 and dirs.last != 'index.md' %}
-{% assign path = dirs[0] %}
+{% if dirs.size > 0 %}
 <ol class="breadcrumb">
   <li><a href="/">HOME</a></li>
-{% for dir in dirs %}
+{% unless dirs.last == 'index.md' %}
+  {% assign path = dirs[0] %}
+  {% for dir in dirs %}
   {% unless forloop.last %}
     {% assign finder_path = path | append: '/index.md' %}
     {% for p in site.pages %}
@@ -14,7 +15,8 @@
     {% endfor %}
     {% assign path = path | append: '/' | append: dir %}
   {% endunless %}
-{% endfor %}
+  {% endfor %}
+{% endunless %}
   <li class="active">{{ page.title }}</li>
 </ol>
 {% endif %}

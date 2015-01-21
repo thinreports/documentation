@@ -1,0 +1,10 @@
+{% if page.group %}
+<div class="list-group">
+  {% for p in site.pages %}{% if p.group == page.group %}
+    {% assign url = site.baseurl | append: p.url %}
+    <a href="{{ url }}" class="list-group-item{% if p.path == page.path %} active{% endif %}">
+      {{ p.title }}
+    </a>
+  {% endif %}{% endfor %}
+</div>
+{% endif %}
