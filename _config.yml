@@ -1,6 +1,12 @@
 baseurl: /documentation
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: [tables, no_intra_emphasis, autolink, space_after_headers]
+  with_toc_data: true
 highlighter: pygments
 gems:
   - jekyll-sitemap
+sass:
+  style: :compressed
+  sass_dir: assets/css/_includes

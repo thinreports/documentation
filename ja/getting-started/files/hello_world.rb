@@ -5,12 +5,12 @@ require 'rubygems'    # Ruby1.9+の場合は不要
 require 'thinreports'
 
 # (B)
-report = ThinReports::Report.new :layout => 'hello_world'
+report = Thinreports::Report.new :layout => 'hello_world'
 
 # (C) 1ページ目
 report.start_new_page
 
-report.page.item(:world).value('ThinReports')
+report.page.item(:world).value('Thinreports')
 report.page.item(:world_ja).value('帳票ソリューション')
 
 # (D) 2ページ目
@@ -28,7 +28,7 @@ end
 
 # (F) 4ページ目
 report.start_new_page do
-  values(:world    => 'ThinReports', 
+  values(:world    => 'Thinreports', 
          :world_ja => '帳票ソリューション')
 end
 
