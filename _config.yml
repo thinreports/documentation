@@ -1,4 +1,4 @@
-baseurl: /documentation
+baseurl: /docs
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
 markdown: redcarpet
 redcarpet:
