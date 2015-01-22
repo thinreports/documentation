@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: インストールガイド
 group: getting-started
 toc: true

@@ -1,0 +1,80 @@
+<!-- Translator -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'ja',
+          autoDisplay: false,
+          gaTrack: true,
+          gaId: 'UA-53873059-1'
+        }, 'google_translate_element');
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </div>
+</div>
+
+<!-- TOC -->
+{% if include.toc %}
+<div class="panel panel-default" id="toc" style="display: none;">
+  <div class="panel-heading" data-target="#toc-content" data-toggle="collapse">
+    Table of Contents
+    <span class="pull-right" id="toc-collapse-icon"><i class="glyphicon glyphicon-menu-up"></i></span>
+  </div>
+  <div id="toc-content" class="panel-collapse collapse in">
+    <div class="panel-body">
+      <ul></ul>
+    </div>
+  </div>
+</div>
+<script>
+// Switch icon of collapse button
+$('#toc-content').on('show.bs.collapse', function() {
+  $('#toc-collapse-icon i').removeClass('glyphicon-menu-down')
+  .addClass('glyphicon-menu-up');
+});
+$('#toc-content').on('hide.bs.collapse', function() {
+  $('#toc-collapse-icon i').removeClass('glyphicon-menu-up')
+  .addClass('glyphicon-menu-down');
+});
+
+// Generate table of contents
+$(function() {
+  var toc = $('#toc ul');
+  var tocId, tocRow, tocLevel;
+
+  $('#content article h2,h3,h4').each(function(index) {
+    tocId = 'toc-' + (index + 1);
+    tocLevel = 'level-' + this.tagName.toLowerCase();
+    tocRow = $('<li>').addClass(tocLevel);
+
+    $('<a>').attr('href', '#' + tocId)
+      .text($(this).text())
+      .appendTo(tocRow);
+      toc.append(tocRow);
+
+      $(this).attr('id', tocId);
+    });
+    $('#toc').show();
+  });
+</script>
+{% endif %}
+
+<!-- Related Links -->
+
+<div class="panel panel-default hide-on-small" id="related-links">
+  <div class="panel-heading">Related Links</div>
+  <div class="list-group">
+    <a href="https://groups.google.com/forum/#!forum/thinreports" class="list-group-item" target="_blank">
+      <span class="glyphicon glyphicon-new-window"></span> Discussion Group
+    </a>
+    <a href="https://github.com/thinreports" class="list-group-item" target="_blank">
+      <span class="glyphicon glyphicon-new-window"></span> Thinreports Project (GitHub)
+    </a>
+    <a href="https://rubygems.org/gems/thinreports-rails" class="list-group-item" target="_blank">
+      <span class="glyphicon glyphicon-new-window"></span> thinreports-rails gem
+    </a>
+  </div>
+</div>

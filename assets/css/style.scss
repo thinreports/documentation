@@ -9,12 +9,19 @@
   border-radius: #{$radius};
 }
 
+@mixin nowrap-row {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 body {
   font-size: 14px;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
   font-weight: 300;
   color: #555;
   line-height: 1.5em;
+  padding-bottom: 100px;
 }
 
 h1, h2, h3, h4 {
@@ -25,36 +32,67 @@ h1, h2, h3, h4 {
   max-width: 980px;
 }
 
-#toc {
-  ul {
-    list-style-type: none;
+header {
+  h1 {
     margin: 0;
     padding: 0;
 
-    li {
-      line-height: 2em;
-      white-space: nowrap;
+    a {
+      font-weight: 300;
+    }
+  }
+}
+
+#main nav {
+  .panel .panel-heading {
+    background-color: #fff;
+  }
+
+  #google_translate_element {
+    &> div {
+      height: 26px;
+      line-height: 26px;
       overflow: hidden;
-      text-overflow: ellipsis;
 
-      &.level-h2 {
-        font-size: 14px;
+      select {
+        width: 100%;
       }
+    }
+  }
 
-      &.level-h3 {
-        font-size: 13px;
-        padding-left: 1em;
-      }
+  #toc {
+    .panel-heading {
+      cursor: pointer;
+    }
 
-      &.level-h4 {
-        font-size: 11px;
-        padding-left: 2.2em;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        line-height: 2em;
+        @include nowrap-row;
+
+        &.level-h2 {
+          font-size: 14px;
+        }
+
+        &.level-h3 {
+          font-size: 13px;
+          padding-left: 1em;
+        }
+
+        &.level-h4 {
+          font-size: 11px;
+          padding-left: 2.2em;
+        }
       }
     }
   }
 }
 
-.main {
+#content {
   box-sizing: border-box;
 
   .page-header {
@@ -109,6 +147,42 @@ h1, h2, h3, h4 {
         margin-bottom: 0 !important;
       }
     }
+
+    &.page-index {
+      &> ul {
+        list-style-type: none;
+        padding-left: 1em;
+        font-size: 14px;
+        line-height: 1.8em;
+      }
+
+      h2:first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #e7e7e7;
+
+  p {
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
+}
+
+@media (max-width: 768px) {
+  // Hide sidebar panels on small devicec
+  #main nav .hide-on-small {
+    display: none;
   }
 }
 

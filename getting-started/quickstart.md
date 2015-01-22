@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: クイックスタートガイド
 group: getting-started
 toc: true
@@ -123,9 +123,9 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
       標準フォントは、Editorにビルトインされており、別途インストールする必要はありません。
     </p>
     <ul>
-      <li>Helvetica（Sans-Serif）</li>
-      <li>Times New Roman（Serif）</li>
-      <li>Courier New（Monospace）</li>
+      <li>Helvetica（san-serif）</li>
+      <li>Times New Roman（serif）</li>
+      <li>Courier New（monospace）</li>
       <li>IPA 明朝</li>
       <li>IPA P明朝</li>
       <li>IPA ゴシック</li>
