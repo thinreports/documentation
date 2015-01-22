@@ -2,7 +2,7 @@
 layout: default
 title: クイックスタートガイド
 group: getting-started
-locale: ja
+toc: true
 ---
 
 ## Hello World
