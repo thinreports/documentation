@@ -248,8 +248,7 @@ end
 #
 # この場合は、生成されたPDF文字列が返されますので、手動でファイルを作成するか、
 # HTTPレスポンスの場合は、適切なMIME-Typeを指定して返却します。
-# なお、#generate の最初の引数の :pdf は、省略可能です。
-output = Thinreports::Report.generate(:pdf, :layout => 'hello_world') do
+output = Thinreports::Report.generate(:layout => 'hello_world') do
   start_new_page
   # :
 end
