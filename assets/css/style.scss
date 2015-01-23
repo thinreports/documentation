@@ -180,9 +180,17 @@ footer {
 }
 
 @media (max-width: 768px) {
-  // Hide sidebar panels on small devicec
+  // Hide sidebar panels on small device
   #main nav .hide-on-small {
     display: none;
+  }
+
+  // Hide Google Translate Toolbar on small device
+  iframe.goog-te-banner-frame {
+    display: none !important;
+  }
+  body {
+    top: 0 !important;
   }
 }
 
