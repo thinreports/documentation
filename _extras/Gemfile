@@ -1,0 +1,6 @@
+# For using rouge instead of pygments on Windows
+
+# rouge >= 1.7.0 with Jekyll 2.4.0 dose not work
+# See https://github.com/jekyll/jekyll/issues/3036
+gem 'rouge', '1.6.2'
+gem 'wdm'
