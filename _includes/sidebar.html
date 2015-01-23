@@ -33,11 +33,11 @@
 // Switch icon of collapse button
 $('#toc-content').on('show.bs.collapse', function() {
   $('#toc-collapse-icon i').removeClass('glyphicon-menu-down')
-  .addClass('glyphicon-menu-up');
+                           .addClass('glyphicon-menu-up');
 });
 $('#toc-content').on('hide.bs.collapse', function() {
   $('#toc-collapse-icon i').removeClass('glyphicon-menu-up')
-  .addClass('glyphicon-menu-down');
+                           .addClass('glyphicon-menu-down');
 });
 
 // Generate table of contents
@@ -51,14 +51,14 @@ $(function() {
     tocRow = $('<li>').addClass(tocLevel);
 
     $('<a>').attr('href', '#' + tocId)
-      .text($(this).text())
-      .appendTo(tocRow);
-      toc.append(tocRow);
+            .text($(this).text())
+            .appendTo(tocRow);
+    toc.append(tocRow);
 
-      $(this).attr('id', tocId);
-    });
-    $('#toc').show();
+    $(this).attr('id', tocId);
   });
+  $('#toc').show();
+});
 </script>
 {% endif %}
 

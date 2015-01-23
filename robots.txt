@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: http://thinreports.github.io/documentation/sitemap.xml
+Sitemap: http://www.thinreports.org/documentation/sitemap.xml

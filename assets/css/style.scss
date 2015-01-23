@@ -4,9 +4,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700,300italic,500italic,700italic);
 
 @mixin border-radius($radius) {
-  -moz-border-radius: #{$radius};
-  -webkit-border-radius: #{$radius};
-  border-radius: #{$radius};
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin nowrap-row {
