@@ -30,10 +30,13 @@ If you find problems or improvements in the translation result, **please help fo
 * Git
 * [Pygments](http://pygments.org) (**Windows excepted**)
 
-##### How to install Pygments
+#### How to install Pygments
 
   1. Install Python
-  2. Install Pygments using easy_install
+  2. Install Pygments using easy_install as follows:
+```
+$ sudo easy_install pygments
+```
 
 #### Run locally
 
@@ -53,10 +56,21 @@ Launch Jekyll server with `--watch` option:
 
     $ bundle exec jekyll server -w -b ''
 
-If your platform is **Windows**, launch it as follows:
+If your platform is **Windows**, launch it with `--config` option as follows:
 
     $ bundle exec jekyll server -w -b '' --config _config.yml,_extras/config.yml
 
 #### Editing documents and confirmation
 
-You 
+If you edit documents, it is automatically compiled by Jekyll.
+You should open `http://localhost:4000` in your browser, and make sure your changes.
+
+#### Commit and pull request
+
+Push your changes to your forked repository:
+
+    $ git commit -am 'add some new feature'
+    $ git push origin new-feature
+
+Then, create new Pull Request! Thanks!
+
