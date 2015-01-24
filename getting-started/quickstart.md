@@ -183,19 +183,19 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
 
 require 'thinreports'
 
-report = Thinreports::Report.new :layout => 'hello_world'
+report = ThinReports::Report.new :layout => 'hello_world'
 
 # 1st page
 report.start_new_page
 
-report.page.item(:world).value('Thinreports')
-report.page.item(:thinreports).value('Thinreports')
+report.page.item(:world).value('ThinReports')
+report.page.item(:thinreports).value('ThinReports')
 
 # 2nd page
 report.start_new_page do |page|
   page.item(:world).value('Ruby').style(:color, '#ff0000')
   page.item(:hello).style(:color, '#ff0000')
-  page.item(:thinreports).value('Thinreports')
+  page.item(:thinreports).value('ThinReports')
 end
 
 # 3rd page
@@ -207,7 +207,7 @@ end
 # 4th page
 report.start_new_page do
   values(:world => 'World',
-         :thinreports => 'Thinreports')
+         :thinreports => 'ThinReports')
 end
 
 report.generate_file('hello_world.pdf')
@@ -224,22 +224,22 @@ require 'thinreports'
 Thinreports Generator をロードしています。
 
 ```ruby
-report = Thinreports::Report.new :layout => 'hello_world'
+report = ThinReports::Report.new :layout => 'hello_world'
 ```
 
-読み込むレイアウトファイルを指定して `Thinreports::Report` クラスを初期化しています。
+読み込むレイアウトファイルを指定して `ThinReports::Report` クラスを初期化しています。
 レイアウトファイルを指定する際は、拡張子 `.tlf` は省略可能です。また、これは以下のように記述することも可能です。
 
 
 ```ruby
 # create メソッド + 引数なし
-report = Thinreports::Report.create(:layout => 'hello_world.tlf') do
+report = ThinReports::Report.create(:layout => 'hello_world.tlf') do
   start_new_page
   # :
 end
 
 # create メソッド + 引数あり
-report = Thinreports::Report.create(:layout => 'hello_world') do |r|
+report = ThinReports::Report.create(:layout => 'hello_world') do |r|
   r.start_new_page
   # :
 end
@@ -248,21 +248,21 @@ end
 #
 # この場合は、生成されたPDF文字列が返されますので、手動でファイルを作成するか、
 # HTTPレスポンスの場合は、適切なMIME-Typeを指定して返却します。
-output = Thinreports::Report.generate(:layout => 'hello_world') do
+output = ThinReports::Report.generate(:layout => 'hello_world') do
   start_new_page
   # :
 end
 
 # generate_file メソッドを直接使用（ブロック引数の有無は #create と同様）
-Thinreports::Report.generate_file('hello_world.pdf', :layout => 'hello_world') do |report|
+ThinReports::Report.generate_file('hello_world.pdf', :layout => 'hello_world') do |report|
   report.start_new_page
 end
 
 # use_layout メソッドを指定してレイアウトファイルを設定
-report = Thinreports::Report.new
+report = ThinReports::Report.new
 report.use_layout 'hello_world.tlf'
 
-Thinreports::Report.generate do
+ThinReports::Report.generate do
   use_layout 'hello_world'
 end
 ```
@@ -271,8 +271,8 @@ end
 # 1st page
 report.start_new_page
 
-report.page.item(:world).value('Thinreports')
-report.page.item(:thinreports).value('Thinreports')
+report.page.item(:world).value('ThinReports')
+report.page.item(:thinreports).value('ThinReports')
 ```
 
 新しいページが追加され `report.page` が追加されたページを参照するようになります。
@@ -282,7 +282,7 @@ report.page.item(:thinreports).value('Thinreports')
 report.start_new_page do |page|
   page.item(:world).value('Ruby').style(:color, '#ff0000')
   page.item(:hello).style(:color, '#ff0000')
-  page.item(:thinreports).value('Thinreports')
+  page.item(:thinreports).value('ThinReports')
 end
 ```
 
@@ -308,7 +308,7 @@ end
 # 4th page
 report.start_new_page do
   values(:world => 'World',
-  :thinreports => 'Thinreports')
+         :thinreports => 'ThinReports')
 end
 ```
 
