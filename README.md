@@ -8,9 +8,9 @@ This is the source for the [thinreports.org/documentation](http://www.thinreport
 
 If you find mistakes or improvements of [thinreports.org/documentation](http://www.thinreports.org/documentation), please report it [here](https://github.com/thinreports/documentation/issues/new).
 
-### Improve translation quality
+### Improve quality of translation
 
-Thinreports Documentation uses Google Translate in order to translate japanese contents in other language. However the translation quality is not very high in most cases.
+Thinreports Documentation uses Google Translate in order to translate japanese contents in other language. However quality of translation is not very high in most cases.
 
 If you find problems or improvements in the translation result, **please help for improvement** in the following way:
 
@@ -30,6 +30,11 @@ If you find problems or improvements in the translation result, **please help fo
 * Git
 * [Pygments](http://pygments.org) (**Windows excepted**)
 
+##### How to install Pygments
+
+  1. Install Python
+  2. Install Pygments using easy_install
+
 #### Run locally
 
 Fork this repository, and clone your forked repository:
@@ -44,6 +49,14 @@ Install runtime dependencies:
 
     $ bundle install
 
-Launch Jekyll server:
+Launch Jekyll server with `--watch` option:
 
-    $ bundle exec jekyll server -w --baseurl ''
+    $ bundle exec jekyll server -w -b ''
+
+If your platform is **Windows**, launch it as follows:
+
+    $ bundle exec jekyll server -w -b '' --config _config.yml,_extras/config.yml
+
+#### Editing documents and confirmation
+
+You 
