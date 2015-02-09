@@ -2,7 +2,6 @@
 layout: article
 title: インストールガイド
 group: getting-started
-toc: true
 ---
 
 Thinreports を利用するには [Thinreports Editor](http://www.thinreports.org/features/editor/) と

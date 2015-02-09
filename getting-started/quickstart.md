@@ -2,7 +2,6 @@
 layout: article
 title: クイックスタートガイド
 group: getting-started
-toc: true
 ---
 
 ## Hello World

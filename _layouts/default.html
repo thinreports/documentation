@@ -31,6 +31,20 @@
           </div>
           {% endif %}
           {{ content }}
+          <script>
+            // Set icon to all external links
+            (function() {
+              var href;
+              $('#content article a').each(function() {
+                href = $(this).attr('href');
+                if (/^http/.test(href) && !/thinreports\.org/.test(href)) {
+                  $(this).attr('target', '_blank')
+                         .append(' ')
+                         .append('<span class="glyphicon glyphicon-new-window">');
+                }
+              });
+            })();
+          </script>
         </div>
       </div>
     </div>
