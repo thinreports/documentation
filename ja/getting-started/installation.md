@@ -1,7 +1,9 @@
 ---
 layout: article
+locale: ja
 title: インストールガイド
 group: getting-started
+redirect_from: /getting-started/installation.html
 ---
 
 Thinreports を利用するには [Thinreports Editor](http://www.thinreports.org/features/editor/) と
@@ -89,30 +91,6 @@ Thinreports Generator をインストールするにはいくつかのライブ�
 
 各ライブラリのサポートバージョンについては [こちら](http://www.thinreports.org/features/generator/) で確認できます。
 
-### RubyGems でインストールする
-
-RubyGems でインストールする場合は、ターミナル上で以下のコマンドを実行すれば完了です。
-
-```
-$ gem install thinreports
-```
-
-#### バージョンを指定してインストールする
-
-インストールコマンドに `-v` オプションを指定することでインストールするバージョンを指定できます。
-
-```
-$ gem install thinreports -v 0.7.7
-```
-
-#### アップデートする
-
-```
-$ gem update thinreports
-```
-
-アップデートの際もインストール同様 `-v` オプションでアップデートするバージョンを指定できます。
-
 ### Bundler でインストールする
 
 gem 管理ツール [Bundler](http://bundler.io/) を使ってインストールする場合は、まず Bundler をインストールします。
@@ -131,4 +109,18 @@ gem 'thinreports'
 
 ```
 $ bundle install
+```
+
+### RubyGems でインストールする
+
+RubyGems でインストールする場合は、ターミナル上で以下のコマンドを実行すれば完了です。
+
+```
+$ gem install thinreports
+```
+
+#### アップデートする
+
+```
+$ gem update thinreports
 ```

@@ -1,15 +1,15 @@
 {% assign dirs = page.path | split: '/' %}
 
-{% if dirs.size > 1 %}
+{% if dirs.size > 2 %}
 <ol class="breadcrumb">
-  <li><a href="{% if site.baseurl == '' %}/{% else %}{{ site.baseurl }}{% endif %}">HOME</a></li>
+  <li><a href="{% if site.baseurl == '' %}/{% else %}{{ site.baseurl }}{% endif %}{{ page.locale }}">HOME</a></li>
 {% unless dirs.last == 'index.md' %}
-  {% assign path = dirs[0] %}
+  {% assign path = dirs[1] %}
   {% for dir in dirs %}
   {% unless forloop.last %}
     {% assign finder_path = path | append: '/index.md' %}
     {% for p in site.pages %}
-      {% if p.path contains finder_path %}
+      {% if p.locale == page.locale and p.path contains finder_path %}
         <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
       {% endif %}
     {% endfor %}

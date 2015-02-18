@@ -6,6 +6,9 @@ redcarpet:
 highlighter: pygments
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
 sass:
   style: :compressed
   sass_dir: assets/css/_includes
+
+available_locales: ['ja', 'en']

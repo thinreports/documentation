@@ -1,7 +1,9 @@
 ---
 layout: article
+locale: ja
 title: クイックスタートガイド
 group: getting-started
+redirect_from: /getting-started/quickstart.html
 ---
 
 ## Hello World
@@ -19,7 +21,7 @@ group: getting-started
 
 Thinreports Editor を起動し、ツールバーの「新規作成」ボタンから新しいレイアウトを作成します。
 
-![新規作成](images/thinreports-editor1.png "新規作成")
+![新規作成]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor1.png "新規作成")
 
 | 項目       | 値                               |
 | --------- | -------------------------------- |
@@ -30,12 +32,12 @@ Thinreports Editor を起動し、ツールバーの「新規作成」ボタン�
 OK をクリックすると新しいタブに真っさらなキャンバスが作成されます。
 ここに以下のようなレイアウトを作成する手順を説明します。
 
-![完成形](images/thinreports-editor14.png "完成形")
+![完成形]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor14.png "完成形")
 
 #### 静的テキストツールの使用
 
 まず、Editor 左部にあるツールボックスより
-**テキストツール**![テキストツール](images/thinreports-editor-text.png)を選択します。
+**テキストツール**![テキストツール]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor-text.png)を選択します。
 その状態で、キャンバス上の任意の場所をクリック又は範囲ドラッグすると、
 テキスト編集ダイアログが表示され、ここに「Hello」と入力しOKをクリックします。
 
@@ -47,17 +49,17 @@ OK をクリックすると新しいタブに真っさらなキャンバスが�
   </div>
 </div>
 
-![静的テキストの描画](images/thinreports-editor2.png "静的テキストの描画")
+![静的テキストの描画]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor2.png "静的テキストの描画")
 
 キャンバス上に「Hello」の文字が表示され、そのテキストが選択状態になっていますので引き続きスタイルを変更します。
 Editor 上部にあるツールバーより、フォント「**Times New Roman** 」を選択し、
 さらにその横にあるコンボボックスへ「**50**」と入力して下さい。
 
-![テキストのスタイル変更](images/thinreports-editor3.png "テキストのスタイル変更")
+![テキストのスタイル変更]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor3.png "テキストのスタイル変更")
 
 #### ブロックツールの使用
 
-次に **ブロックツール** ![ブロックツール](images/thinreports-editor-tblock.png) を使って「World」部を作成します。
+次に **ブロックツール** ![ブロックツール]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor-tblock.png) を使って「World」部を作成します。
 
 <div class="panel panel-info">
   <div class="panel-heading">ブロックツール</div>
@@ -69,7 +71,7 @@ Editor 上部にあるツールバーより、フォント「**Times New Roman**
 
 ブロックツールを選択し「Hello」横付近から範囲ドラッグして下さい。
 
-![ブロックの描画](images/thinreports-editor4.png "ブロックの描画")
+![ブロックの描画]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor4.png "ブロックの描画")
 
 続いて、先ほど作成した「Hello」と同様のスタイルを設定しますが、今回は別の方法で設定してみます。
 Editor 右部（プロパティペイン）では、選択されたオブジェクト（テキストやブロックなど全ての図形）の
@@ -78,7 +80,7 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
 ブロック作成直後は、そのブロックが選択状態になっているので、ブロックのプロパティ一覧が表示されているはずです。
 その一覧にある「フォント」を「**Times New Roman**」に、「サイズ」を「**50**」にそれぞれ設定して下さい。
 
-![ブロックのスタイル設定](images/thinreports-editor5.png "ブロックのスタイル設定")
+![ブロックのスタイル設定]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor5.png "ブロックのスタイル設定")
 
 次にブロックの**ID**を設定します。
 デフォルトでは `text` というIDが設定されているので、これを `world` に変更します。
@@ -87,17 +89,17 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
 プロパティ一覧の中から「ID」という項目を探し、その値を `text` から `world` に変更して下さい。
 すると、ブロック上の名前も `world` になります。
 
-![ブロックIDの設定](images/thinreports-editor6.png "ブロックIDの設定")
+![ブロックIDの設定]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor6.png "ブロックIDの設定")
 
 以上で「Hello」「world」の定義は完了ですが、さらに別の「Hello」「world」を追加してみます。
 
 #### 複数選択とコピー＆ペースト
 
-まず、ツールボックスから**選択ツール**![選択ツール](images/thinreports-editor-select.png) を選択します。
+まず、ツールボックスから**選択ツール**![選択ツール]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor-select.png) を選択します。
 そして、既に作成した「Hello」と「world」双方が含まれるように範囲ドラッグし、複数選択状態とします。
 なお `Ctrl(Command) + クリック` でも可能です。
 
-![複数選択](images/thinreports-editor7.png "複数選択")
+![複数選択]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor7.png "複数選択")
 
 その状態で `Ctrl(Command)-C` を押下（コピー）し、そのまま `Ctrl(Command)-V` を押下（ペースト）します。
 そうするとコピーされた「Hello」と「world」がオリジナルと同じ位置に貼り付けられ、
@@ -105,7 +107,7 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
 
 そのまま**十字キーの下キー**を何度か押下して以下のように配置します。
 
-![コピー＆ペースト](images/thinreports-editor8.png "コピー＆ペースト")
+![コピー＆ペースト]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor8.png "コピー＆ペースト")
 
 それでは、コピーしたブロックの設定を変更します。
 
@@ -139,7 +141,7 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
   </div>
 </div>
 
-![ブロックの設定変更](images/thinreports-editor9.png "ブロックの設定変更")
+![ブロックの設定変更]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor9.png "ブロックの設定変更")
 
 #### ブロック以外の図形へのID設定
 
@@ -148,28 +150,28 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
 [Generator](http://www.thinreports.org/features/generator) から塗りや枠線の色を変更したり、
 表示/非表示を切り替えることができるようになります。
 
-![ブロック以外へのID設定](images/thinreports-editor10.png "ブロック以外へのID設定")
+![ブロック以外へのID設定]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor10.png "ブロック以外へのID設定")
 
 #### 画像ツールの使用
 
 続いて、画像ツールを使って画像の埋め込みを行います。
 
 まず、最初に作成した「Hello」をコピー＆ペーストして2段目の「Hello」下に配置します。
-そして、ツールボックスより**画像ツール**![画像ツール](images/thinreports-editor-image.png) を選択し、
+そして、ツールボックスより**画像ツール**![画像ツール]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor-image.png) を選択し、
 キャンバスの任意の場所をクリックします。
 
-![画像ツールの使用](images/thinreports-editor11.png "画像ツールの使用")
+![画像ツールの使用]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor11.png "画像ツールの使用")
 
 画像を選択するダイアログが表示されるので、
-ローカルに保存した [ruby-logo.png](files/ruby-logo.png) を選択します。
+ローカルに保存した [ruby-logo.png]({{ site.baseurl }}/assets/getting-started/files/ruby-logo.png) を選択します。
 以下のように画像のサイズ及び位置を調整して完了です。
 
-![画像サイズ・位置の修正](images/thinreports-editor12.png "画像サイズ・位置の修正")
+![画像サイズ・位置の修正]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor12.png "画像サイズ・位置の修正")
 
 以上でレイアウトの作成は終了です。ツールバーの保存ボタンをクリックし、
 任意の場所に保存して下さい（ここでは `/Users/<user>/Documents/hello_world.tlf` としています）
 
-![保存](images/thinreports-editor13.png "保存")
+![保存]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor13.png "保存")
 
 ### Step2 帳票生成スクリプトの作成
 
@@ -301,7 +303,7 @@ end
 ブロック付きでページを追加していますが、ブロック引数を省略しています。
 ブロック引数を省略すると、ブロック内のスコープが `report.page` になり、
 結果 `#item()` メソッドなどをレシーバ無しでコールすることが可能です。
-さらに `:hello` オブジェクトを #hide() メソッドにより非表示に設定しています。
+さらに `:hello` オブジェクトを `#hide()` メソッドにより非表示に設定しています。
 
 ```ruby
 # 4th page
@@ -320,7 +322,7 @@ report.generate(:filename => 'hello_world.pdf')
 ```
 
 それまでに設定された内容を元に `hello_world.pdf` という名前でPDFファイルを生成しています。
- `#generate_file()` の代わりに `#generate` を使用することで、ファイルを生成せずにPDFデータを取得することも可能です。
+`:filename` プロパティ無しで `#generate` を使用すると、ファイルを生成せずにPDFデータを取得することが可能です。
 
 ### Step3 帳票生成
 
@@ -335,16 +337,16 @@ Done!
 コンソール上に `Done!` と表示されれば成功です。
 スクリプトと同じ場所に `hello_world.pdf` というPDFファイルが作成されているはずです。
 
-![PDFファイル](images/hello_world_pdf.png "PDFファイル")
+![PDFファイル]({{ site.baseurl }}/assets/getting-started/images/hello_world_pdf.png "PDFファイル")
 
 ### ダウンロード
 
 上記で使用したファイルは、以下よりダウンロードできます。
 
-  * [レイアウトファイル（hello_world.tlf）](files/hello_world.tlf)
-  * [Rubyスクリプトファイル（hello_world.rb）](files/hello_world.rb)
-  * [出力結果PDFファイル（hello_world.pdf）](files/hello_world.pdf)
-  * [上記3ファイルのアーカイブ（hello_world.zip）](files/hello_world.zip)
+  * [レイアウトファイル（hello_world.tlf）]({{ site.baseurl }}/assets/getting-started/files/hello_world.tlf)
+  * [Rubyスクリプトファイル（hello_world.rb）]({{ site.baseurl }}/assets/getting-started/files/hello_world.rb)
+  * [出力結果PDFファイル（hello_world.pdf）]({{ site.baseurl }}/assets/getting-started/files/hello_world.pdf)
+  * [上記3ファイルのアーカイブ（hello_world.zip）]({{ site.baseurl }}/assets/getting-started/files/hello_world.zip)
 
 ## 簡易仕様書の自動生成
 
@@ -352,12 +354,12 @@ Thinreports Editorには「簡易仕様書作成機能」があり、 `HTML` 又
 上記「Hello World」レイアウトの仕様書を作成するには、
 以下のように「保存 - レイアウト定義をエクスポート」をクリックします。
 
-![簡易仕様書出力](images/thinreports-editor15.png "簡易仕様書出力")
+![簡易仕様書出力]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor15.png "簡易仕様書出力")
 
 保存先とファイル種別を選択するダイアログが表示されるので、任意の保存先・ファイル種別を選択して保存して下さい。
 なお `HTML` で出力した場合は、以下のような `HTML` ドキュメントが作成されます。
 
-![簡易仕様書HTML](images/hello_world.doc.png "簡易仕様書HTML")
+![簡易仕様書HTML]({{ site.baseurl }}/assets/getting-started/images/hello_world.doc.png "簡易仕様書HTML")
 
 但し、Google Chrome/Safari/Firefox ではスナップショット（左部）内の画像（Rubyロゴ）が表示されません。
 IE9 以上では正しく表示されます。

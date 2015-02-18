@@ -8,27 +8,21 @@ This is the source for the [thinreports.org/documentation](http://www.thinreport
 
 If you find mistakes or improvements of [thinreports.org/documentation](http://www.thinreports.org/documentation), please report it [here](https://github.com/thinreports/documentation/issues/new).
 
-### Improve quality of translation
+### Edit the documents on browser
 
-Thinreports Documentation uses Google Translate in order to translate japanese contents in other language. However quality of translation is not very high in most cases.
+  1. Click the `Edit this page` button of each page
+  2. Edit content and propose your change.
+     Please see [this page](https://help.github.com/articles/editing-files-in-another-user-s-repository/) for more instructions
 
-If you find problems or improvements in the translation result, **please help for improvement** in the following way:
-
-* [Help improve the automatic translation of your site](https://support.google.com/translate/answer/2534602?hl=en)
-* [サイトの自動翻訳の改善に協力する](https://support.google.com/translate/answer/2534602?hl=ja)
-
-![](http://translate.google.com/manager/website/static_files/img/screenshot_suggestions1.jpg)
-
-![](http://translate.google.com/manager/website/static_files/img/screenshot_suggestions2.jpg)
-
-### Pull Request
+### Edit the documents by Pull Request
 
 #### Requirements
 
-* Ruby 2.0+
-* Bundler 1.6.0+
-* Git
-* [Pygments](http://pygments.org) (**Windows excepted**)
+  * GitHub account
+  * Ruby 2.0+
+  * Bundler 1.6.0+
+  * Git
+  * [Pygments](http://pygments.org) (**Windows excepted**)
 
 #### How to install Pygments
 
@@ -73,4 +67,3 @@ Push your changes to your forked repository:
     $ git push origin new-feature
 
 Then, create new Pull Request! Thanks!
-

@@ -1,5 +1,7 @@
 ---
 layout: index
+locale: ja
+redirect_from: /
 ---
 
 ## はじめよう
@@ -8,13 +10,7 @@ layout: index
 
 ## API リファレンス
 
-<div class="panel panel-primary">
-  <div class="panel-heading">近日公開予定</div>
-  <div class="panel-body">
-    Generator の主要な API の詳しい使い方や逆引きリファレンスを公開します。
-  </div>
-</div>
-
+**近日公開予定**
 
 ## Examples
 

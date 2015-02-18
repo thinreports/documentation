@@ -1,20 +1,30 @@
-<!-- Translator -->
-<div class="panel panel-default">
-  <div class="panel-body">
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'ja',
-          autoDisplay: false,
-          gaTrack: true,
-          gaId: 'UA-53873059-1'
-        }, 'google_translate_element');
-      }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- Locale Selector -->
+{% if page.locale %}
+<div class="locale-selector">
+  <div class="btn-group bgn-group">
+  {% for locale in site.available_locales %}
+  {% if locale == page.locale %}
+    <a href="{{ page.url }}" class="btn btn-default active">{{ locale }}</a>
+  {% else %}
+    {% comment %} // e.g. /ja/foo/bar.html to /en/foo/bar.html {% endcomment %}
+    {% assign locale_url = page.url | replace_first: page.locale, locale %}
+    {% assign locale_page_exists = fales %}
+
+    {% comment %} // Check whether page is exists {% endcomment %}
+    {% for p in site.pages %}{% if p.url == locale_url %}
+      {% assign locale_page_exists = true %}
+    {% endif %}{% endfor %}
+
+    {% if locale_page_exists %}
+      <a href="{{ locale_url }}" class="btn btn-default">{{ locale }}</a>
+    {% else %}
+      <a href="#" class="btn btn-default disabled">{{ locale }}</a>
+    {% endif %}
+  {% endif %}
+  {% endfor %}
   </div>
 </div>
+{% endif %}
 
 <!-- TOC -->
 {% if include.toc %}

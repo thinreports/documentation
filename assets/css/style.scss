@@ -15,13 +15,18 @@
   text-overflow: ellipsis;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-size: 14px;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
   font-weight: 300;
   color: #555;
   line-height: 1.5em;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 h1, h2, h3, h4 {
@@ -44,18 +49,22 @@ header {
 }
 
 #main nav {
-  .panel .panel-heading {
-    background-color: #fff;
+  .locale-selector {
+    margin-bottom: 10px;
+
+    a {
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+
+      &.disabled {
+        color: #bbb !important;
+      }
+    }
   }
 
-  #google_translate_element .goog-te-gadget {
-    height: 27px;
-    line-height: 27px;
-    overflow: hidden;
-
-    select {
-      width: 100%;
-    }
+  .panel .panel-heading {
+    background-color: #fff;
   }
 
   #toc {
@@ -149,7 +158,7 @@ header {
     &.page-index {
       &> ul {
         list-style-type: none;
-        padding-left: 1em;
+        padding-left: 0;
         font-size: 14px;
         line-height: 1.8em;
       }

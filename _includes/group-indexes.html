@@ -1,6 +1,6 @@
 {% if include.group %}
 <ul>
-{% for p in site.pages %}{% if p.group == include.group %}
+{% for p in site.pages %}{% if p.locale == page.locale and p.group == include.group %}
   <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
 {% endif %}{% endfor %}
 </ul>
