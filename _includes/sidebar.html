@@ -16,7 +16,7 @@
     {% endif %}{% endfor %}
 
     {% if locale_page_exists %}
-      <a href="{{ locale_url }}" class="btn btn-default">{{ locale }}</a>
+      <a href="{{ site.baseurl }}{{ locale_url }}" class="btn btn-default">{{ locale }}</a>
     {% else %}
       <a href="#" class="btn btn-default disabled">{{ locale }}</a>
     {% endif %}

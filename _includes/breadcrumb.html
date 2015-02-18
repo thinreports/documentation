@@ -2,7 +2,7 @@
 
 {% if dirs.size > 2 %}
 <ol class="breadcrumb">
-  <li><a href="{% if site.baseurl == '' %}/{% else %}{{ site.baseurl }}{% endif %}{{ page.locale }}">HOME</a></li>
+  <li><a href="{{ site.baseurl }}/{{ page.locale }}">HOME</a></li>
 {% unless dirs.last == 'index.md' %}
   {% assign path = dirs[1] %}
   {% for dir in dirs %}
