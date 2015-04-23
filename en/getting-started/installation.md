@@ -19,7 +19,7 @@ Launch Google Chrome, you can move from [the Download page](http://www.thinrepor
 
 Please install the Editor with referring to [Install and uninstall apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/1053369?hl=en).
 
-##### Uninstall
+#### Uninstall
 
 Please uninstall the Editor with referring to [Install and uninstall apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/1053369?hl=en).
 
@@ -32,11 +32,11 @@ and follow the instructions below.
 
 Run the downloaded `.exe` file and follow the wizard instructions.
 
-##### Update
+#### Update
 
 Reinstall the Editor.
 
-##### Uninstall
+#### Uninstall
 
 Uninstallation can be performed through Control Panel (detailed below) or by running the unins000.exe program.
 
