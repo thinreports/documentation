@@ -20,7 +20,7 @@ Google Chrome を起動し、 [公式サイトのダウンロードページ](ht
 
 [アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) を参考に Thinreports Editor をインストールして下さい。
 
-##### アンインストール
+#### アンインストール
 
 [アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) を参考に Thinreports Editor をアンインストールして下さい。
 
@@ -34,11 +34,11 @@ Thinreports Editor  of DesktopApp ver がサポートする OS は [こちら](h
 
 ダウンロードした `.exe` ファイルを実行し、ウィザードに従ってください。
 
-##### アップデート
+#### アップデート
 
 現在の Editor をアンインストールし、新しいバージョンをインストールして下さい。
 
-##### アンインストール
+#### アンインストール
 
 プログラムの管理画面でアンインストールを実行するか、インストールフォルダにある `unins000.exe` を実行して下さい。
 さらに、完全に削除したい場合は `C:\Users\username` のようなホームディレクトリ内にある `.thinreports` フォルダも削除して下さい。
