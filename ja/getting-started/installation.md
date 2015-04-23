@@ -12,72 +12,36 @@ Thinreports を利用するには [Thinreports Editor](http://www.thinreports.or
 
 ## Thinreports Editor
 
+### ChromeApp ver
+
+Google Chrome を起動し、 [公式サイトのダウンロードページ](http://www.thinreports.org/download/) から chrome web store における Thinreports Editor の詳細ページに移動します。
+
+#### インストールする
+
+[アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) を参考に Thinreports Editor をインストールして下さい。
+
+##### アンインストール
+
+[アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) を参考に Thinreports Editor をアンインストールして下さい。
+
+### DesktopApp ver
+
 まず [公式サイトのダウンロードページ](http://www.thinreports.org/download/) で、
 あなたの OS にあったファイルをダウンロードして下さい。
-Thinreports Editor がサポートする OS は [こちら](http://www.thinreports.org/features/editor/) で確認できます。
+Thinreports Editor  of DesktopApp ver がサポートする OS は [こちら](http://www.thinreports.org/features/editor/) で確認できます。
 
-### Windows にインストールする
+#### インストールする
 
 ダウンロードした `.exe` ファイルを実行し、ウィザードに従ってください。
 
-#### アップデート
+##### アップデート
 
 現在の Editor をアンインストールし、新しいバージョンをインストールして下さい。
 
-#### アンインストール
+##### アンインストール
 
-各 OS のプログラムの管理画面（以下参照）でアンインストールを実行するか、インストールフォルダにある `unins000.exe` を実行して下さい。
+プログラムの管理画面でアンインストールを実行するか、インストールフォルダにある `unins000.exe` を実行して下さい。
 さらに、完全に削除したい場合は `C:\Users\username` のようなホームディレクトリ内にある `.thinreports` フォルダも削除して下さい。
-
-### Mac OS X にインストールする
-
-ダウンロードした `.dmg` ファイルを実行し、画面内の ThinreportsEditor アイコンを
-Applications フォルダにドラッグ＆ドロップしてください。
-
-#### アップデート
-
-現在の Editor をアンインストールし、新しいバージョンをインストールして下さい。
-
-#### アンインストール
-
-基本的にはアプリケーション画面の ThinreportsEditor を削除すれば完了です。
-ただし、関連データ（設定情報など）が残っている場合があるため、
-[AppCleaner](http://www.freemacsoft.net/appcleaner/) 等のサードパーティ製アプリなどを使って削除して下さい。
-
-### Ubuntu (Linux) にインストールする
-
-ダウンロードしたアーカイブ `.tar.gz` を展開します。
-
-```
-$ tar zxvf ThinreportsEditor-X.X.X-linux-x86.tar.gz
-```
-
-展開したディレクトリ内の `ThinreportsEditor-X.X.X` ディレクトリを `/home/username` のような任意の場所に配置します。
-
-```
-$ mv ThinreportsEditor-X.X.X-linux-x86/ThinreportsEditor-X.X.X /home/username
-```
-
-以上でインストールは完了です。
-Editor を起動させるには `ThinreportsEditor-X.X.X/bin/ThinreportsEditor.sh` を実行して下さい。
-
-#### アップデート
-
-現在の Editor をアンインストールし、新しいバージョンをインストールして下さい。
-
-#### アンインストール
-
-`ThinreportsEditor-X.X.X` ディレクトリを削除します。
-
-```
-$ rm -fr /path/to/ThinreportsEditor-X.X.X
-```
-
-さらに、完全に削除したい場合はホームディレクトリ内の `.thinreports` ディレクトリも削除して下さい。
-
-```
-$ rm -fr ~/.thinreports
-```
 
 ## Thinreports Generator
 
