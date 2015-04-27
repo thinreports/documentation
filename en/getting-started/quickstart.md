@@ -181,7 +181,7 @@ Here, the file was saved in the same location as the layout (in this case, `/Use
 
 require 'thinreports'
 
-report = Thinreports::Report.new layout: 'hello_world'
+report = Thinreports::Report.new :layout => 'hello_world'
 
 # 1st page
 report.start_new_page
@@ -204,11 +204,11 @@ end
 
 # 4th page
 report.start_new_page do
-  values(world: 'World',
-         thinreports: 'Thinreports')
+  values(:world => 'World',
+         :thinreports => 'Thinreports')
 end
 
-report.generate(filename: 'hello_world.pdf')
+report.generate_file('hello_world.pdf')
 
 puts 'Done!'
 ```
@@ -222,7 +222,7 @@ require 'thinreports'
 This is code for loading thinreports.
 
 ```ruby
-report = Thinreports::Report.new layout: 'hello_world'
+report = Thinreports::Report.new :layout => 'hello_world'
 ```
 
 The layout is loaded, and a Thinreports::Report object is instantiated.
@@ -231,13 +231,13 @@ In addition, the report can also be generated using the alternative methods belo
 
 ```ruby
 # #create method without arguments
-report = Thinreports::Report.create(layout: 'hello_world.tlf') do
+report = Thinreports::Report.create(:layout => 'hello_world.tlf') do
   start_new_page
   # :
 end
 
 # #create method with arguments
-report = Thinreports::Report.create(layout: 'hello_world') do |r|
+report = Thinreports::Report.create(:layout => 'hello_world') do |r|
   r.start_new_page
   # :
 end
@@ -246,9 +246,14 @@ end
 #
 # Data for the PDF file is returned from this method, and can be written to file or
 # used as part of an HTTP response once the proper MIME-Type is set.  
-output = Thinreports::Report.generate(layout: 'hello_world') do
+output = Thinreports::Report.generate(:layout => 'hello_world') do
   start_new_page
   # :
+end
+
+# #generate_file method (direct usage)
+Thinreports::Report.generate_file('hello_world.pdf', :layout => 'hello_world') do |report|
+  report.start_new_page
 end
 
 # #use_layout method to set layout
@@ -298,18 +303,18 @@ In addition, the `#hide()` method was called on the `:hello` object to set the o
 ```ruby
 # 4th page
 report.start_new_page do
-  values(world: 'World',
-         thinreports: 'Thinreports')
+  values(:world => 'World',
+         :thinreports => 'Thinreports')
 end
 ```
 
 This uses the same argument-less block method as `#start_new_page do ... end`,
 but all the variables were set through the `#values()` method.
-The `#values()` method receives the multiple arguments in `id: value` form,
+The `#values()` method receives the multiple arguments in `:id => value` form,
 allowing multiple variables to be set in a single call.
 
 ```ruby
-report.generate(filename: 'hello_world.pdf')
+report.generate(:filename => 'hello_world.pdf')
 ```
 
 This takes all the settings so far to generate a PDF file called `hello_world.pdf`.
@@ -343,13 +348,15 @@ The files used in the exercises above can be found below.
 ## Exporting layout definitions
 
 Thinreports Editor has an “Export Layout Definition” function, allowing you to export the layout definition in `HTML` or `CSV` format.
-To export the layout definition of the “Hello World” file, click "Save - Export Document As XXXX", as shown below.
+To export the layout definition of the “Hello World” file, click "Save - Export Layout Definition", as shown below.
 
 ![Exporting layout definitions]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor15.png "Exporting layout definitions")
 
+A dialog box showing you the available formats (HTML/CSV) will be shown,
+and you will be prompted to save the layout file if you haven’t done so.
 If HTML was selected, the generated document will be similar to the example below.
 
 ![Exported HTML document]({{ site.baseurl }}/assets/getting-started/images/hello_world.doc.png "Exported HTML document")
 
-However, the snapshot in the HTML document does not current render embedded images correctly in Safari.
-This is correctly rendered in Google Chrome/Firefox/IE9+.
+However, the snapshot in the HTML document does not current render embedded images correctly in Google Chrome/Safari/Firefox.
+This only renders correctly in IE9+.
