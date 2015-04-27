@@ -1,38 +1,34 @@
 # coding: utf-8
 
-# (A)
-require 'rubygems'    # Ruby1.9+の場合は不要
 require 'thinreports'
 
-# (B)
-report = Thinreports::Report.new :layout => 'hello_world'
+report = Thinreports::Report.new layout: 'hello_world'
 
-# (C) 1ページ目
+# 1st page
 report.start_new_page
 
 report.page.item(:world).value('Thinreports')
-report.page.item(:world_ja).value('帳票ソリューション')
+report.page.item(:thinreports).value('Thinreports')
 
-# (D) 2ページ目
+# 2nd page
 report.start_new_page do |page|
   page.item(:world).value('Ruby').style(:color, '#ff0000')
   page.item(:hello).style(:color, '#ff0000')
-  page.item(:world_ja).value('世界')
+  page.item(:thinreports).value('Thinreports')
 end
 
-# (E) 3ページ目
+# 3rd page
 report.start_new_page do
   item(:world).value('Hello')
   item(:hello).hide
 end
 
-# (F) 4ページ目
+# 4th page
 report.start_new_page do
-  values(:world    => 'Thinreports', 
-         :world_ja => '帳票ソリューション')
+  values(world: 'World',
+         thinreports: 'Thinreports')
 end
 
-# (G)
-report.generate_file('hello_world.pdf')
+report.generate(filename: 'hello_world.pdf')
 
 puts 'Done!'
