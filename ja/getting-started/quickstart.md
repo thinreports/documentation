@@ -184,19 +184,19 @@ Editor 右部（プロパティペイン）では、選択されたオブジェ�
 
 require 'thinreports'
 
-report = ThinReports::Report.new :layout => 'hello_world'
+report = Thinreports::Report.new layout: 'hello_world'
 
 # 1st page
 report.start_new_page
 
-report.page.item(:world).value('ThinReports')
-report.page.item(:thinreports).value('ThinReports')
+report.page.item(:world).value('Thinreports')
+report.page.item(:thinreports).value('Thinreports')
 
 # 2nd page
 report.start_new_page do |page|
   page.item(:world).value('Ruby').style(:color, '#ff0000')
   page.item(:hello).style(:color, '#ff0000')
-  page.item(:thinreports).value('ThinReports')
+  page.item(:thinreports).value('Thinreports')
 end
 
 # 3rd page
@@ -207,11 +207,11 @@ end
 
 # 4th page
 report.start_new_page do
-  values(:world => 'World',
-         :thinreports => 'ThinReports')
+  values(world: 'World',
+         thinreports: 'Thinreports')
 end
 
-report.generate_file('hello_world.pdf')
+report.generate(filename: 'hello_world.pdf')
 
 puts 'Done!'
 ```
@@ -225,22 +225,22 @@ require 'thinreports'
 Thinreports Generator をロードしています。
 
 ```ruby
-report = ThinReports::Report.new :layout => 'hello_world'
+report = Thinreports::Report.new layout: 'hello_world'
 ```
 
-読み込むレイアウトファイルを指定して `ThinReports::Report` クラスを初期化しています。
+読み込むレイアウトファイルを指定して `Thinreports::Report` クラスを初期化しています。
 レイアウトファイルを指定する際は、拡張子 `.tlf` は省略可能です。また、これは以下のように記述することも可能です。
 
 
 ```ruby
 # create メソッド + 引数なし
-report = ThinReports::Report.create(:layout => 'hello_world.tlf') do
+report = Thinreports::Report.create(layout: 'hello_world.tlf') do
   start_new_page
   # :
 end
 
 # create メソッド + 引数あり
-report = ThinReports::Report.create(:layout => 'hello_world') do |r|
+report = Thinreports::Report.create(layout: 'hello_world') do |r|
   r.start_new_page
   # :
 end
@@ -249,21 +249,16 @@ end
 #
 # この場合は、生成されたPDF文字列が返されますので、手動でファイルを作成するか、
 # HTTPレスポンスの場合は、適切なMIME-Typeを指定して返却します。
-output = ThinReports::Report.generate(:layout => 'hello_world') do
+output = Thinreports::Report.generate(layout: 'hello_world') do
   start_new_page
   # :
 end
 
-# generate_file メソッドを直接使用（ブロック引数の有無は #create と同様）
-ThinReports::Report.generate_file('hello_world.pdf', :layout => 'hello_world') do |report|
-  report.start_new_page
-end
-
 # use_layout メソッドを指定してレイアウトファイルを設定
-report = ThinReports::Report.new
+report = Thinreports::Report.new
 report.use_layout 'hello_world.tlf'
 
-ThinReports::Report.generate do
+Thinreports::Report.generate do
   use_layout 'hello_world'
 end
 ```
@@ -272,8 +267,8 @@ end
 # 1st page
 report.start_new_page
 
-report.page.item(:world).value('ThinReports')
-report.page.item(:thinreports).value('ThinReports')
+report.page.item(:world).value('Thinreports')
+report.page.item(:thinreports).value('Thinreports')
 ```
 
 新しいページが追加され `report.page` が追加されたページを参照するようになります。
@@ -283,7 +278,7 @@ report.page.item(:thinreports).value('ThinReports')
 report.start_new_page do |page|
   page.item(:world).value('Ruby').style(:color, '#ff0000')
   page.item(:hello).style(:color, '#ff0000')
-  page.item(:thinreports).value('ThinReports')
+  page.item(:thinreports).value('Thinreports')
 end
 ```
 
@@ -308,17 +303,17 @@ end
 ```ruby
 # 4th page
 report.start_new_page do
-  values(:world => 'World',
-         :thinreports => 'ThinReports')
+  values(world: 'World',
+         thinreports: 'Thinreports')
 end
 ```
 
 3ページ目と同じ方法でページを追加していますが、
 各ブロックへの値の設定方法として `#values()` メソッドを使用しています。
- `#values()` メソッドは `:id => value` の形式で複数のブロックに対して一度に値を設定することが可能です。
+ `#values()` メソッドは `id: value` の形式で複数のブロックに対して一度に値を設定することが可能です。
 
 ```ruby
-report.generate(:filename => 'hello_world.pdf')
+report.generate(filename: 'hello_world.pdf')
 ```
 
 それまでに設定された内容を元に `hello_world.pdf` という名前でPDFファイルを生成しています。
@@ -352,14 +347,14 @@ Done!
 
 Thinreports Editorには「簡易仕様書作成機能」があり、 `HTML` 又は `CSV` 形式で出力可能です。
 上記「Hello World」レイアウトの仕様書を作成するには、
-以下のように「保存 - レイアウト定義をエクスポート」をクリックします。
+以下のように「保存 - ドキュメントをエクスポート（XXXX形式）」をクリックします。
 
 ![簡易仕様書出力]({{ site.baseurl }}/assets/getting-started/images/thinreports-editor15.png "簡易仕様書出力")
 
-保存先とファイル種別を選択するダイアログが表示されるので、任意の保存先・ファイル種別を選択して保存して下さい。
+保存先を選択するダイアログが表示されるので、任意の保存先・ファイル種別を選択して保存して下さい。
 なお `HTML` で出力した場合は、以下のような `HTML` ドキュメントが作成されます。
 
 ![簡易仕様書HTML]({{ site.baseurl }}/assets/getting-started/images/hello_world.doc.png "簡易仕様書HTML")
 
-但し、Google Chrome/Safari/Firefox ではスナップショット（左部）内の画像（Rubyロゴ）が表示されません。
-IE9 以上では正しく表示されます。
+但し、Safari ではスナップショット（左部）内の画像（Rubyロゴ）が表示されません。
+Google Chrome/Firefox/IE9 以上では正しく表示されます。

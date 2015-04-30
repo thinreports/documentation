@@ -11,12 +11,31 @@ Here, we will outline the details on obtaining and installing these components.
 
 ## Thinreports Editor
 
-Download the required files from [the Download page](http://www.thinreports.org/download/) depending on your operating system,
-and follow the instructions below.
+### ChromeApp ver
 
-### Windows
+#### Requirements
 
-Run the downloaded `.exe` file and follow the wizard instructions.
+[Google Chrome Browser](https://www.google.com/chrome/browser/desktop) version 23 or higher
+
+#### Install
+
+Please install the Editor with referring to [Install and uninstall apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/1053369?hl=en).
+
+#### Uninstall
+
+Please uninstall the Editor with referring to [Install and uninstall apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/1053369?hl=en).
+
+### Desktop ver (old installer ver)
+
+<div class="alert alert-danger">
+  The Desktop ver has been deprecated and is only available for Windows OS.
+  In addition, the version won't be released in the next major release.
+</div>
+
+#### Install
+
+  1. Download Installer file from [this page](http://sourceforge.net/projects/thinreports/files/)
+  2. Run the downloaded file and follow the wizard instructions
 
 #### Update
 
@@ -25,48 +44,6 @@ Reinstall the Editor.
 #### Uninstall
 
 Uninstallation can be performed through Control Panel (detailed below) or by running the unins000.exe program.
-
-### Mac OS X
-
-Download and run `.dmg` file. You will be presented with the following window.
-
-#### Update
-
-Reinstall the Editor.
-
-#### Uninstall
-
-The uninstallation process is as simple as deleting the ThinreportsEditor file from the Application folder.
-However, temporary data may be left behind, and it is recommended that you use AppCleaner or a similar application to remove these data.
-
-### Linux
-
-Download and extract `.tar.gz` file.
-
-```
-$ tar zxvf ThinreportsEditor-X.X.X-linux-x86.tar.gz
-```
-
-Move the ThinreportsEditor-X.X.X from the extracted location to your desired location.
-
-```
-$ mv ThinreportsEditor-X.X.X-linux-x86/ThinreportsEditor-X.X.X /home/username
-```
-
-The installation process is complete. The downloaded tar.gz file is no longer needed, and can be deleted.
-Run the `<Install Dir>/bin/ThinreportsEditor.sh` file.
-
-#### Update
-
-Reinstall the Editor.
-
-#### Uninstall
-
-Delete the ThinreportsEditor-X.X.X directory.
-
-```
-$ rm -fr /path/to/ThinreportsEditor-X.X.X
-```
 
 ## Thinreports Generator
 
