@@ -12,27 +12,33 @@ Thinreports を利用するには [Thinreports Editor](http://www.thinreports.or
 
 ## Thinreports Editor
 
-### ChromeApp ver
+### ChromeApp 版
 
-Google Chrome を起動し、 [公式サイトのダウンロードページ](http://www.thinreports.org/download/) から chrome web store における Thinreports Editor の詳細ページに移動します。
+#### 必要なソフトウェア
+
+ChromeApp 版を利用するためには [Google Chrome ブラウザ](https://www.google.com/chrome/browser/desktop) のバージョン 23 以降が必要です。
+[Google Chrome のサイト](https://www.google.com/chrome/browser/desktop) よりインストールしてください。
 
 #### インストールする
 
-[アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) を参考に Thinreports Editor をインストールして下さい。
+  1. Chrome を起動し [公式サイトダウンロードページ](http://www.thinreports.org/download/) の Chrome Web Store 画像をクリック
+  2. [アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) に従ってインストール
 
 #### アンインストール
 
-[アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) を参考に Thinreports Editor をアンインストールして下さい。
+[アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) に従ってアンインストールしてください。
 
-### DesktopApp ver
+### デスクトップアプリ版（従来のインストーラ版）
 
-まず [公式サイトのダウンロードページ](http://www.thinreports.org/download/) で、
-あなたの OS にあったファイルをダウンロードして下さい。
-Thinreports Editor  of DesktopApp ver がサポートする OS は [こちら](http://www.thinreports.org/features/editor/) で確認できます。
+<div class="alert alert-danger">
+  デスクトップ版は非推奨です。バージョン 0.8 のデスクトップアプリ版は <strong>Windows 版のみ</strong> 利用できます。
+  また、次期メジャーリリース以降はデスクトップアプリ版は <strong>リリースされません。</strong>
+</div>
 
 #### インストールする
 
-ダウンロードした `.exe` ファイルを実行し、ウィザードに従ってください。
+  1. [こちらのページ](http://sourceforge.net/projects/thinreports/files/) から Windows 版のインストーラをダウンロード
+  2. ダウンロードした `.exe` ファイルを実行し、ウィザードに従ってインストール
 
 #### アップデート
 

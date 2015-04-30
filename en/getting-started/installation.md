@@ -13,7 +13,9 @@ Here, we will outline the details on obtaining and installing these components.
 
 ### ChromeApp ver
 
-Launch Google Chrome, you can move from [the Download page](http://www.thinreports.org/download/) to detail page of Thinreports Editor in chrome web store.
+#### Requirements
+
+[Google Chrome Browser](https://www.google.com/chrome/browser/desktop) version 23 or higher
 
 #### Install
 
@@ -23,14 +25,17 @@ Please install the Editor with referring to [Install and uninstall apps - Chrome
 
 Please uninstall the Editor with referring to [Install and uninstall apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/1053369?hl=en).
 
-### Desktop ver
+### Desktop ver (old installer ver)
 
-Download the required files from [the Download page](http://www.thinreports.org/download/) depending on your operating system,
-and follow the instructions below.
+<div class="alert alert-danger">
+  The Desktop ver has been deprecated and is only available for Windows OS.
+  In addition, the version won't be released in the next major release.
+</div>
 
 #### Install
 
-Run the downloaded `.exe` file and follow the wizard instructions.
+  1. Download Installer file from [this page](http://sourceforge.net/projects/thinreports/files/)
+  2. Run the downloaded file and follow the wizard instructions
 
 #### Update
 
