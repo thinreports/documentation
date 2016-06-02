@@ -12,42 +12,30 @@ Thinreports を利用するには [Thinreports Editor](http://www.thinreports.or
 
 ## Thinreports Editor
 
-### ChromeApp 版
-
-#### 必要なソフトウェア
+### 必要なソフトウェア
 
 ChromeApp 版を利用するためには [Google Chrome ブラウザ](https://www.google.com/chrome/browser/desktop) のバージョン 23 以降が必要です。
 [Google Chrome のサイト](https://www.google.com/chrome/browser/desktop) よりインストールしてください。
 
-#### インストールする
+### インストールする
 
   1. Chrome を起動し [公式サイトダウンロードページ](http://www.thinreports.org/download/) の Chrome Web Store 画像をクリック
   2. [アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) に従ってインストール
 
-#### アンインストール
+### アンインストール
 
 [アプリをインストールまたはアンインストールする - Chrome ウェブストア ヘルプ](https://support.google.com/chrome_webstore/answer/1053369?hl=ja) に従ってアンインストールしてください。
 
-### デスクトップアプリ版（従来のインストーラ版）
+### 過去のバージョンをインストールする
 
-<div class="alert alert-danger">
-  デスクトップ版は非推奨です。バージョン 0.8 のデスクトップアプリ版は <strong>Windows 版のみ</strong> 利用できます。
-  また、次期メジャーリリース以降はデスクトップアプリ版は <strong>リリースされません。</strong>
-</div>
+ChromeApp 版は自動的に新しいバージョンに更新されます。過去のパージョンを使いたい場合は下記の手順でインストールすることができます。
 
-#### インストールする
+  1. [こちら](https://github.com/thinreports/thinreports-editor/releases) からインストールしたいバージョンの zip ファイルをダウンロードし、任意の場所に展開します
+  2. Chrome を起動し、アドレスバーに `chrome://extensions/` を入力して拡張機能画面を開きます
+  3. デベロッパーモードをチェックします
+  3. パッケージ化されていない拡張機能を読み込むボタンを押して、(1) で展開したフォルダを選択します
 
-  1. [こちらのページ](http://sourceforge.net/projects/thinreports/files/) から Windows 版のインストーラをダウンロード
-  2. ダウンロードした `.exe` ファイルを実行し、ウィザードに従ってインストール
-
-#### アップデート
-
-現在の Editor をアンインストールし、新しいバージョンをインストールして下さい。
-
-#### アンインストール
-
-プログラムの管理画面でアンインストールを実行するか、インストールフォルダにある `unins000.exe` を実行して下さい。
-さらに、完全に削除したい場合は `C:\Users\username` のようなホームディレクトリ内にある `.thinreports` フォルダも削除して下さい。
+以上でインストールは完了です。通常のアプリと同様に `chrome://apps` から起動することができます。
 
 ## Thinreports Generator
 
