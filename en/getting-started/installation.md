@@ -26,9 +26,9 @@ Just delete the folder.
 Version 0.9.0 is available as a Chrome application. However, as announced by Google, it is decided that Chrome applications will be discontinued soon.
 
   1. Download the zip file of the version (0.9.x) you want to install from [the release page](https://github.com/thinreports/thinreports-editor/releases) and extract it
-  2. Boot Chrome, and move to Extentions page to enter `chrome://extentions` to the Address bar
+  2. Boot Chrome, and move to Extensions page to enter `chrome://extensions` to the Address bar
   3. Check the [Developer mode] box
-  4. Click the [Load unpacked extentions...] button, and select the folder where you extracted in the step1
+  4. Click the [Load unpacked extensions...] button, and select the folder where you extracted in the step1
 
 You can launch from `chrome://apps`.
 
