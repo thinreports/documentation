@@ -11,28 +11,26 @@ Here, we will outline the details on obtaining and installing these components.
 
 ## Thinreports Editor
 
-### Requirements
+### 0.10.0+
 
-[Google Chrome Browser](https://www.google.com/chrome/browser/desktop) version 23 or higher
+#### Install
 
-### Install
+Download the latest editor suitable for your OS from [the release page](https://github.com/thinreports/thinreports-editor/releases). Extract the downloaded zip file and place the created folder in an arbitrary place. You can launch the Editor by executing the executable file in the folder.
 
-Please install the Editor with referring to [Install and uninstall apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/1053369?hl=en).
+#### Uninstall
 
-### Uninstall
+Just delete the folder.
 
-Please uninstall the Editor with referring to [Install and uninstall apps - Chrome Web Store Help](https://support.google.com/chrome_webstore/answer/1053369?hl=en).
+### 0.9.0 (Not Recommended)
 
-### How to install old version
+Version 0.9.0 is available as a Chrome application. However, as announced by Google, it is decided that Chrome applications will be discontinued soon.
 
-Editor will be automatically upgraded. If you want to use an old version of Editor, you can install by the following step:
-
-  1. Download and extract a zip file that you want to install from [here](https://github.com/thinreports/thinreports-editor/releases)
-  2. Boot Chrome, and move to Extentions page to enter `chrome://extentions` to the Address bar
+  1. Download the zip file of the version (0.9.x) you want to install from [the release page](https://github.com/thinreports/thinreports-editor/releases) and extract it
+  2. Boot Chrome, and move to Extensions page to enter `chrome://extensions` to the Address bar
   3. Check the [Developer mode] box
-  4. Click the [Load unpacked extentions...] button, and select the folder where you extracted in the step1
+  4. Click the [Load unpacked extensions...] button, and select the folder where you extracted in the step1
 
-You can boot the old version of Editor in `chrome://apps`.
+You can launch from `chrome://apps`.
 
 ## Thinreports Generator
 
